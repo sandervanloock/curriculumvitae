@@ -1,0 +1,167 @@
+%\documentclass{article}
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+
+\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage[dutch]{babel}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Sander}
+\familyname{Van Loock}
+%\title{Resumé title}                          % optional, remove / comment the line if not wanted
+\address{Valkstraat 58}{2860 Sint-Katelijne-Waver}    % optional, remove / comment the line if not wanted
+\mobile{0474~55~33~47}                         % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove / comment the line if not wanted
+\email{sandervanloock1990@hotmail.com}                          % optional, remove / comment the line if not wanted
+\homepage{be.linkedin.com/in/sandervanloock}                  % optional, remove / comment the line if not wanted
+\extrainfo{21/09/1990 - Jette}            % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{assets/avatar2}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+% \section{Algemeen}
+% \cvitem{Adres}{Zorgvliet 16 2860 Sint-Katelijne-Waver}
+% \cvitem{Geboorte}{21/09/1990 - Jette}
+
+
+\section{Opleiding}
+\cventry{2011--2013}{Master of Science in Engineering: Computer Sciences}{KU Leuven}{Leuven}{\textit{met onderscheiding}}{specializatie  Gedistribueerde Systemen}
+\cventry{2008--2011}{Bachelor of Informatics}{KU Leuven}{Leuven}{\textit{geslaagd op voldoende wijze}}{}  % arguments 3 to 6 can be left empty
+\cventry{2002--2008}{Latijn - Wiskunde}{College Hagelstein}{Sint-Katelijne-Waver}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Master thesis}
+\cvitem{Titel}{\emph{Vergelijkende studie van raamwerken voor de ontwikkeling van mobiele HTML5-applicaties}}
+%\cvitem{Promotor}{Prof. dr. ir. E. Duval}
+%\cvitem{Samenvatting}{
+%Bij de ontwikkeling van mobiele HTML5 applicaties bestaan verschillende raamwerken die de ontwikkelaar helpen.
+%Door de vari\"{e}teit aan mobiele HTML5-raamwerken, dringt een grondige vergelijking
+%zich op om te weten welk raamwerk nu het beste is.
+%De thesis vergelijkt Sencha Touch, Kendo UI, jQuery Mobile en Lungo op basis van populariteit, productiviteit, bruikbaarheid, ondersteuning en performantie.
+%}
+
+\section{Ervaring}
+\subsection{Professionele Ervaring}
+\cventry{2013 - Heden}{Technical Lead}{Foreach BVBA}{Merksem}{}{}
+%Verscheidene projecten implementeren bij Foreach intern en legacy code refactoren, zowel in functie van de specificaties als van architectuur.  Hieronder vallen o.a. het Resto platform (Spring Framework) en Voka website (Umbraco)
+%}
+\cventry{Zomer 2012}{Stage}{Bureau van Dijk Publishing}{Brussel}{}{}
+%Single point of failure te vermijden in een ASP.NET service door middel van het implementatie van een gedistrubueerde chaching systeem. Er werd tussen de sevice- en database-laag een tussenlaag voorzien die gebruik maakte van Couchbase.
+%}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Bedrijfservaring:  1 maand stage Bureau van Dijk Publishing;
+% \end{itemize}
+\subsection{Overige Ervaring}
+\cventry{2007--2013}{Leider}{Chirojongens Elzestraat}{Sint-Katelijne-Waver}{}{}
+\cventry{2009--2012}{Hoofdleider}{Chirojongens Elzestraat}{Sint-Katelijne-Waver}{}{}
+
+%\clearpage
+
+\section{Computervaardigheden}
+\cvitem{\textbf{Languages}}{Java, JavaScript, TypeScript, HTML}
+\cvitem{\textbf{Frameworks}}{Spring, Spring Boot, Hibernate, Thymeleaf, jQuery, Angular}
+\cvitem{\textbf{DevOps}}{Docker, AWS, Linux, Tomcat}
+\cvitem{\textbf{Other}}{Solr, ELK, Git, Maven, Npm, Yarn, Webpack}
+
+\section{Talenkennis}
+\cvitemwithcomment{Nederlands}{Zeer goed}{moedertaal}
+\cvitemwithcomment{Engels}{Zeer goed}{}
+\cvitemwithcomment{Frans}{Goed}{}
+\cvitemwithcomment{Dutis}{Noties}{}
+
+% \section{Interests}
+% \cvitem{Chiro}{Description}
+% \cvitem{Basketball}{Description}
+% \cvitem{Guitar}{Description}
+% \section{Contact}
+% \cvline{Linkedin.com}        {\Colorhref{http://www.linkedin.com/in/adamatan}             {Adam Matan}   - Professional profile and links.    }
+% \cvline{Stackoverflow.com}   {\small\href{http://stackoverflow.com/users/51197/adam-matan} {Adam Matan}   - My software questions and answers. } 
+% \cvline{twitter.com}         {\Colorhref[red]{http://twitter.com/justnoticed}{@justnoticed} - My tech tweets.}
+% \cvitem{\includegraphics[scale=0.1]{mail.png}}{sandervanloock1990@hotmail.com}
+% \cvitem{\includegraphics[scale=0.03]{Phone-Icon-e1364730356928.jpg}}{0474 55 33 47}
+% \cvitem{\includegraphics[scale=0.05]{Skype-icon.png}}{sandervanloock1}
+% \cvitem{\includegraphics[scale=0.05]{LinkedIn-InBug-2C.eps}}{\url{http://lnkd.in/cR-Kzv}}
+% \cvitem{\includegraphics[scale=0.05]{twitter-bird-blue-on-white.eps}}{@SanderVanLoock}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3}
+
+% \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+% 
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5}
+% \cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+% 
+% 
+% \makeletterclosing
+\end{document}
+
+
+%% end of file `template.tex'.
